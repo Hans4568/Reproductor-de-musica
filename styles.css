@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2? family = Ephesis & display = swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    justify-content: space-between;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.buscador{
+    margin-top: 10px;
+    margin-left: 2em;
+    width:650px;
+    height: 3em;
+    background-color:rgba(102, 92, 3, 0.575);
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barrita-buscadora{
+    padding: 3px;
+    margin: .8em;
+    width: 25em;
+    margin-left: 10px;
+}
+.filter-genere {
+    padding: 4px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    color:white;
+    width: 300px;
+    border-radius: 15px;
+    margin-left: 0.3em;
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.reproductor{
+    padding: .3em;
+    margin: 1em;
+    margin-top: 3em;
+    width: 680px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.album img{ 
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: 1em;
+
+    animation-name: rotacion;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+@keyframes rotacion{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+
+.parte2{
+    width: 100px;
+    height: 450px;
+    padding: .5em;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-tiempo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1em;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.barra-tiempo{
+    -webkit-appearance: none;
+}
+.barra-tiempo::-webkit-slider-runnable-track {
+    background-color:rgb(151, 151, 151);
+    height: .3em;
+    border-radius: 30px;
+}
+.barra-tiempo::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: rgb(151, 151, 151);
+    width: 1em;
+    height: 1em;
+    margin-top: -5px;
+}
+
+.controles{
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2em;
+}
+.controles button{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    padding: .1em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20%;
+    width: 60px;
+    margin: .3em;
+    justify-content: center;
+    align-items: center
+}
+button:hover{
+    box-shadow: 0px 0px 0px;
+    padding: .05em;
+}
+
+.control2{
+    color: rgb(156, 156, 156);
+    font-size: 2em;
+    cursor: pointer;
+}
+.barra-vol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+}
+.barra-vol input{
+    cursor: pointer;
+}
+.barr-vol{
+    -webkit-appearance: none;
+}
+.barr-vol::-webkit-slider-runnable-track {
+    background-color:rgb(124, 124, 124);
+    height: .3em;
+    border-radius: 30px;
+}
+.barr-vol::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: rgb(110, 110, 110);
+    width: 1em;
+    height: 1em;
+    margin-top: -5px;
+}
+
+
+
+.songs{
+
+    background-color: rgba(212, 212, 212, 0.568);
+    padding: .5em;
+    border-radius: 2em;
+    width: 650px;
+    height: 550px;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    overflow-y: scroll;
+}
+.songs::-webkit-scrollbar{
+    width: 7px;
+}
+.songs::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 1em;
+}
+.list-songs{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-item{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.list-item img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.list-item:hover{
+    transform: scale(0.95); 
+}
+
+.data{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.7em;
+    margin-left: .5em;
+    cursor: pointer;
+}
+.data:hover{
+    transform: scale(0.95);
+}
+
+.otraforma{
+    display: flex;
+}
+
